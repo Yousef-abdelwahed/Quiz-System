@@ -1,0 +1,130 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.scss";
+@import "./responsive.scss";
+
+// SideBar styles
+.sidebar-container .ps-sidebar-container {
+  background-color: #fff;
+  height: 100vh;
+  color: #000;
+}
+.ps-sidebar-root {
+  border: none !important;
+}
+
+.sidebar-container .ps-sidebar-container .ps-menu-button:hover {
+  background-color: inherit;
+}
+.design {
+  width: 20rem !important;
+}
+
+
+
+.loader {
+  position: relative;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+.loader:before {
+  content: "Loading";
+  color: #000000;
+}
+.loader:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ff4e08;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  top: -70px;
+  animation: motion 3s ease-in-out infinite;
+}
+
+@keyframes motion {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    transform: translateX(-100px) scale(0.3);
+  }
+  75% {
+    transform: translateX(100px) scale(0.3);
+  }
+}
+.modalDeleteBtn {
+  background-color: #752626fd;
+  font-weight: 550;
+
+  &:hover {
+    color: #ffffff;
+    background-color: rgb(255, 93, 93);
+    box-shadow: rgba(79, 0, 0, 0.663) 0px -50px 36px -28px inset;
+    transform: scaleX(1.01);
+    font-weight: 500;
+    transition:
+      box-shadow 1s ease,
+      transform 1s ease,
+      background-color 1s,
+      color 1s ease,
+      font-weight 0.3s ease;
+  }
+
+  transition:
+    box-shadow 1s ease,
+    transform 1s ease;
+}
+.modalBtn {
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+
+  &:hover {
+    color: #000;
+    background-color: white;
+    box-shadow: rgba(165, 165, 165, 0.663) 0px -50px 36px -28px inset;
+    transform: scaleX(1.01);
+    font-weight: 500;
+    transition:
+      box-shadow 1s ease,
+      transform 1s ease,
+      background-color 1s,
+      color 1s ease,
+      font-weight 0.3s ease;
+  }
+
+  transition:
+    box-shadow 1s ease,
+    transform 1s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    // background-color: white !important;
+  }
+}
+.quizBox {
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+
+  &:hover {
+    color: #000;
+    background-color: white;
+    box-shadow: rgba(165, 165, 165, 0.663) 0px -50px 36px -28px inset;
+    transform: scaleX(1.01);
+    font-weight: 500;
+    transition: box-shadow 1s ease, transform 1s ease, background-color 1s,
+      color 1s ease, font-weight 0.3s ease;
+    img {
+      transform: scale(1.02);
+    }
+  }
+  transition: box-shadow 1s ease, transform 1s ease;
+}

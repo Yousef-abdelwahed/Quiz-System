@@ -1,0 +1,43 @@
+/** @format */
+
+.panel {
+  display: none;
+}
+.panel.active {
+  display: block;
+}
+
+.studentIconCard {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    font-size: 1.1em;
+  }
+}
+.studentCarImg {
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+// .studentBtn {
+//   transition: all 0.5s ease-out;
+
+//   &:hover {
+//     box-shadow: 10px 10px 0px -6px rgba(0, 0, 0, 0.81);
+//   }
+//   .spinIcon {
+//     animation: spin 6s infinite linear;
+
+//     @keyframes spin {
+//       from {
+//         transform: rotate(0deg);
+//       }
+//       to {
+//         transform: rotate(360deg);
+//       }
+//     }
+//   }
+// }
+.insideInput {
+  background-color: #ffeddf;
+}
